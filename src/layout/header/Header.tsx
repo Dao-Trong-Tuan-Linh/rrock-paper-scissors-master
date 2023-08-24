@@ -10,7 +10,7 @@ const Header = ({result}:Props) => {
     },[result])
     return (
         <div className='container-header'>
-            <img src="./src/assets/images/logo.svg"/>
+            <img src="/assets/images/logo.svg"/>
             <div className='container-score'>
                 <h1 className='container-score--headline'>Score</h1>
                 <span className='container-score--display'>{`${score}`}</span>
