@@ -25,8 +25,8 @@ const Modal = ({setIsOpenModal,isOpenModal}:Props) => {
         <div className={`modal ${isOpenModal ? 'modal-open' : ''}`}>
             <div ref={ref} className='modal-container' >
                 <span className='modal-title'>Rules</span>
-                <img onClick={() => setIsOpenModal(false)} className='modal-close' src="./src/assets/images/icon-close.svg"/>
-                <img className='modal-main' src="./src/assets/images/image-rules.svg"/>
+                <img onClick={() => setIsOpenModal(false)} className='modal-close' src="/assets/images/icon-close.svg"/>
+                <img className='modal-main' src="/assets/images/image-rules.svg"/>
             </div>
         </div>
     );
