@@ -1,0 +1,14 @@
+[
+    {
+        "value":"paper",
+        "img":"./src/assets/images/icon-paper.svg"
+    },
+    {
+        "value":"scissors",
+        "img":"./src/assets/images/icon-scissors.svg"
+    },
+    {
+        "value":"rock",
+        "img":"./src/assets/images/icon-rock.svg"
+    }
+]

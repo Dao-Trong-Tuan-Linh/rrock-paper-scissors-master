@@ -1,0 +1,77 @@
+.game-option{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    transition: all .2s;
+}
+
+.game-option:hover{
+    transform: scale(1.03);
+}
+
+.container-option{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.background-rock{
+    background-image: var(--rock-gradient);
+    box-shadow: 0 1em 0 #9e152e;
+}
+
+.background-paper {
+    background-image: var(--paper-gradient);
+    box-shadow: 0 1em 0 #2740be;
+}
+
+.background-scissors{
+    background-image: var(--scissors-gradient);
+    box-shadow: 0 1em 0 #c96d1d;
+}
+
+
+
+.container-option::before{
+    width: 100%;
+    height: 100%;
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container-img{
+    width: 75%;
+    height: 75%;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 7px 0 rgba(96,110,133,.25);
+    transition: background-color .15s linear;
+}
+
+.container-img img {
+    height: 50%;
+    width: 50%;
+}
+
+@media screen and (max-width:500px) {
+    .container-option{
+        width: 120px;
+        height: 120px;
+    }
+}

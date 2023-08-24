@@ -1,0 +1,25 @@
+.btn-rules{
+    position: absolute;
+    right: 28px;
+    bottom: 36px;
+    padding: 12px 36px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 20px;
+    color:white;
+    font-weight: 500;
+    border: 1px solid var(--header-outline);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.btn-rules:hover{
+    transform: scale(1.03);
+}
+
+@media screen and (max-width:500px) {
+    .btn-rules{
+        right: calc((100% - 140px)/2);
+        bottom: 5%;
+    }
+}
