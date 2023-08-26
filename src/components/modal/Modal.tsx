@@ -3,8 +3,9 @@ import {useRef,useEffect} from 'react'
 interface Props {
     isOpenModal:boolean,
     setIsOpenModal: React.Dispatch<boolean>;
+    isBonus:boolean
 }
-const Modal = ({setIsOpenModal,isOpenModal}:Props) => {
+const Modal = ({setIsOpenModal,isOpenModal,isBonus}:Props) => {
     const ref = useRef<HTMLDivElement>(null)
     const handleOutsideClick = (event:MouseEvent) => {
         console.log('click')
@@ -26,7 +27,7 @@ const Modal = ({setIsOpenModal,isOpenModal}:Props) => {
             <div ref={ref} className='modal-container' >
                 <span className='modal-title'>Rules</span>
                 <img onClick={() => setIsOpenModal(false)} className='modal-close' src="/assets/images/icon-close.svg"/>
-                <img className='modal-main' src="/assets/images/image-rules.svg"/>
+                <img className='modal-main' src={isBonus ? "/assets/images/image-rules-bonus.svg" : "/assets/images/image-rules.svg"}/>
             </div>
         </div>
     );

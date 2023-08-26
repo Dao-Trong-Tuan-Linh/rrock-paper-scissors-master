@@ -1,0 +1,40 @@
+.container-toggle{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.game-type{
+    font-size:20px;
+}
+
+.color-white{
+    color:white;
+}
+
+.color-dark{
+    color:var(--dark-text);
+}
+
+.btn-toggle{
+    padding-top: 1.5px;
+    width: 72px;
+    height: 32px;
+    border: none;
+    background-color: var(--score-text);
+    border-radius: 16px;
+}
+
+.circle-toggle{
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    transform: translateX(-15px);
+    transition: all .5s;
+}
+
+.circle-toggle.isBonus{
+    transform: translateX(15px);
+}

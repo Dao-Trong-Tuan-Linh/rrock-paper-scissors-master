@@ -1,0 +1,22 @@
+[
+    {
+        "value":"paper",
+        "img":"/assets/images/icon-paper.svg"
+    },
+    {
+        "value":"scissors",
+        "img":"/assets/images/icon-scissors.svg"
+    },
+    {
+        "value":"rock",
+        "img":"/assets/images/icon-rock.svg"
+    },
+    {
+        "value":"lizard",
+        "img":"/assets/images/icon-lizard.svg"
+    },
+    {
+        "value":"spock",
+        "img":"/assets/images/icon-spock.svg"
+    }
+]

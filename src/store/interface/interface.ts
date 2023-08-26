@@ -17,6 +17,11 @@ export interface HouseProviderType {
     setHouseOption:React.Dispatch<GameElement>
 }
 
+export interface StateProviderType {
+    isBonus:boolean,
+    setIsBonus:React.Dispatch<boolean>
+}
+
 export interface ProviderProps {
     children:React.ReactNode | React.ReactElement
 }

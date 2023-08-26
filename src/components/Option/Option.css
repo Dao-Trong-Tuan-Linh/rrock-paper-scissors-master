@@ -15,8 +15,8 @@
 
 .container-option{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -39,7 +39,15 @@
     box-shadow: 0 1em 0 #c96d1d;
 }
 
+.background-lizard{
+    background-image: var(--lizard-gradient);
+    box-shadow: 0 1em 0 #5f37a8;
+}
 
+.background-spock{
+    background-image: var(--cyan);
+    box-shadow: 0 1em 0 #2d8dab;
+}
 
 .container-option::before{
     width: 100%;

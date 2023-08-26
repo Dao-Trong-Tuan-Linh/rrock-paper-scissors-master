@@ -20,6 +20,6 @@
 @media screen and (max-width:500px) {
     .btn-rules{
         right: calc((100% - 140px)/2);
-        bottom: 5%;
+        bottom: 2%;
     }
 }

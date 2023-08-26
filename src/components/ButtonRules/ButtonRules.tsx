@@ -1,4 +1,4 @@
-import "./ButtonRole.css";
+import "./ButtonRules.css";
 
 interface Props {
   setIsOpenModal: React.Dispatch<boolean>;

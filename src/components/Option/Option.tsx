@@ -2,6 +2,8 @@ import "./Option.css";
 import { useElementUser } from "../../store/userStore/UserContext";
 import {useElementHouse} from '../../store/houseStore/HouseContext';
 import { dataOriginal } from "../../layout/Original/Original";
+import { dataBonus } from "../../layout/bonus/Bonus";
+import { useElementState } from "../../store/stateStore/StateContext";
 
 interface Location {
   left?: string;
@@ -18,6 +20,7 @@ interface Props {
 const Option = ({ location, background, img, value }: Props) => {
   const { userOption, setUserOption } = useElementUser();
   const { houseOption, setHouseOption } = useElementHouse();
+  const {isBonus} = useElementState();
   return (
     <button
       onClick={() => {
@@ -27,12 +30,12 @@ const Option = ({ location, background, img, value }: Props) => {
           background: background,
           img: img,
         });
-        const number = Math.floor(Math.random() * (dataOriginal.length));
+        const number = Math.floor(Math.random() * (isBonus ? dataBonus.length : dataOriginal.length));
         setHouseOption({
           ...houseOption,
-          background: dataOriginal[number].background,
-          img: dataOriginal[number].img,
-          value: dataOriginal[number].value,
+          background: isBonus ? dataBonus[number].background : dataOriginal[number].background,
+          img: isBonus ? dataBonus[number].img : dataOriginal[number].img,
+          value:isBonus ? dataBonus[number].value : dataOriginal[number].value,
         });
       }}
       style={location}

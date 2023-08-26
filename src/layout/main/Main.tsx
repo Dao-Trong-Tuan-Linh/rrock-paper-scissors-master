@@ -17,8 +17,15 @@ const Main = ({result,setResult}:Props) => {
   function gameResult(userValue?:string,houseValue?:string) {
     if (
       (userValue === "rock" && houseValue === "scissors") ||
+      (userValue === "rock" && houseValue === "lizard") ||
       (userValue === "scissors" && houseValue === "paper") ||
-      (userValue === "paper" && houseValue === "rock")
+      (userValue === "scissors" && houseValue === "lizard") ||
+      (userValue === "paper" && houseValue === "rock") ||
+      (userValue === "paper" && houseValue === "spock") ||
+      (userValue === "lizard" && houseValue === "spock") ||
+      (userValue === "lizard" && houseValue === "paper") ||
+      (userValue === "spock" && houseValue === "scissors") ||
+      (userValue === "spock" && houseValue === "rock") 
     )  return "win"
     if(userValue === houseValue) return "draw"
     return "lose"

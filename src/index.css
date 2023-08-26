@@ -8,7 +8,7 @@
 }
 
 body{
-  max-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   background-image: var(--radial-gradient);
   font-family: 'Barlow Semi Condensed', sans-serif;
@@ -19,7 +19,7 @@ body{
 }
 
 #root{
-  padding-top: 40px;
+  padding-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;

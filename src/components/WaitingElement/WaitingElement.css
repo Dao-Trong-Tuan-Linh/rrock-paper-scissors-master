@@ -5,6 +5,7 @@
     border-radius: 50%;
     align-self: center;
     animation: waiting 1s linear;
+    grid-area: house;
 }
 
 @keyframes waiting{
@@ -19,5 +20,12 @@
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .waiting-element{
+        width: 180px;
+        height: 180px;
     }
 }

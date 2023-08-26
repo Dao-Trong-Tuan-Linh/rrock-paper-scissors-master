@@ -94,6 +94,7 @@
     z-index: -1;
     opacity: .4;
     animation: fadeIn 1s cubic-bezier(.175,.885,.32,1.275) both infinite alternate-reverse;
+    
 }
 
 .container-img{
