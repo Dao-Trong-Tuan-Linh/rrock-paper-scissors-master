@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./Bonus.css"
 import Option from '../../components/Option/Option';
 import bonus from '../../bonus.json'
